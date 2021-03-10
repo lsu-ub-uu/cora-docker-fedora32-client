@@ -43,6 +43,9 @@ RUN touch /home/client/.gitconfig
 
 RUN chown client:client /home/client -R
 
+RUN mkdir /home/client/records
+RUN chown client:client /home/client/records
+
 USER client
 
 CMD  /home/client/entrypoint.sh
