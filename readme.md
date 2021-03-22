@@ -15,6 +15,12 @@ password: changeit<br>
 
 
 #Adding more files to person (2021-03-09)
+could be exported from Classic using webgui http://localhost:8088/fedora/search<br>
+search for: authority-person*<br>
+open some person, click: "View the Item Index for this Object"<br>
+click "XML metadata"<br>
+
+
 
 ### Create a new data object from the client:
 
