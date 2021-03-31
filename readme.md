@@ -43,5 +43,5 @@ import from file, file containing person  (/home/client/records/persons/METADATA
 run the script "divaExportFedoraDataToProjects.sh", there should be a menuitem under
 divaExportFedoraDataToProjects in external tools
 
-Check that data.tar.gz is updated in diva-cora-docker-fedora project<br>
-Check that fedora32.sql is updated in diva-cora-docker-fcrepo-postgresql project
+Check that **data.tar.gz** is updated in **diva-cora-docker-fedora** project<br>
+Check that **fedora32.sql** is updated in **diva-cora-docker-fcrepo-postgresql** project
