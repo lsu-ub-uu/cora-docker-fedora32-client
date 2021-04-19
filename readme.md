@@ -45,3 +45,22 @@ divaExportFedoraDataToProjects in external tools
 
 Check that **data.tar.gz** is updated in **diva-cora-docker-fedora** project<br>
 Check that **fedora32.sql** is updated in **diva-cora-docker-fcrepo-postgresql** project
+
+### Export and import certificates from/into a keystore
+If you want to get access to e.g. DiVA classic's fedora with this client, you will first have to export the matching certificate from classic's keystore used for fedora and then import the certificate into the keystore used by this client. Below you'll find commands to help you with this. You will have to know and enter the keystore's password.
+
+##### Check which certificates are in a keystore
+
+    keytool -list -v -keystore /path/to/keystore
+    
+Make a note of the alias of the certificate you want to export.
+  
+##### Export a certificate from a keystore
+
+    keytool -export -alias alias-of-the-certificate-you-want-to-export -file file/to/export/to -keystore /path/to/source/keystore
+  
+##### Import a certificate into a keystore
+  
+    keytool -import -trustcacerts -file /path/to/certificate -alias alias-of-the-certificate-in-target-keystore -keystore /path/to/target/keystore
+
+
