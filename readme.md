@@ -2,8 +2,8 @@
 This is intended to be used in conjunction with the docker based eclipe environment for Cora.
 
 ## How to use
-* Start the dev dockers for DiVA, including fedora and its supporting postgresql docker.
-* Start the client with the startscript "divaStartFedora32Client.sh", there should be a menuitem under
+* Start **all** dev dockers for DiVA. Make sure **diva-docker-fedora** and **diva-postgres-fcrepo**.
+* Start the client, **cora-docker-fedora32-client**, with the startscript "divaStartFedora32Client.sh", there should be a menuitem under
 divaStartFedora32Client  in external tools
 * Connect the client to your fedoraServer using:
 
